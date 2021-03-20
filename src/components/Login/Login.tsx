@@ -37,14 +37,7 @@ class LOGIN extends React.Component<Props, MyState> {
       mobile: 9305931509,
       role: "customer",
     };
-    axios
-      .post("http://admin.jiet.app/api/login/send-token", user)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    axios.post("http://admin.jiet.app/api/login/send-token", user);
   };
   render() {
     return (
@@ -85,11 +78,11 @@ class LOGIN extends React.Component<Props, MyState> {
           </div>
 
           <div className="d-flex justify-content-center mb-3">
-            {/* <Link to="/findlocation" style={{ textDecoration: "none" }}>
+            <Link to="/findlocation" style={{ textDecoration: "none" }}>
               <button className="btn4 mt-2">
                 <a>الدخول کذیف</a>
               </button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import Shop1 from "../img/shop1.jpg";
 import data from "../../data/data.json";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -56,11 +55,6 @@ class Maps extends Component {
         newState.markers[0].position.lng = coords.longitude;
 
         this.setState(newState);
-        console.log(
-          "map",
-          this.state.markers[0].position.lat,
-          this.state.markers[0].position.lng
-        );
       });
     }
   };
@@ -73,68 +67,62 @@ class Maps extends Component {
     };
     axios
       .post("https://admin.jiet.app/api/customer/find-store-by-location", user)
-      .then(
-        (res) =>
-          // console.log(JSON.stringify(res.data.data.nearest_store.thumb_url))
-          this.setState({
-            nearshop: res.data.data.nearest_store,
-            aroundshop: res.data.data.around.data.map((x) => (
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-center text-right mt-3 mb-3">
-                  <div
-                    style={{
-                      backgroundImage: `url(${url2 + x.banner_url})`,
-                      // backgroundImage: `url(${Shop1})`,
+      .then((res) =>
+        this.setState({
+          nearshop: res.data.data.nearest_store,
+          aroundshop: res.data.data.around.data.map((x) => (
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex justify-content-center text-right mt-3 mb-3">
+                <div
+                  style={{
+                    backgroundImage: `url(${url2 + x.banner_url})`,
 
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center",
-                      backgroundSize: "cover",
-                      width: "400px",
-                      height: "300px",
-                      borderRadius: "15px",
-                    }}
-                    onClick={() => this.setState({ shopdId: x.id })}
-                  >
-                    <div class="d-flex flex-row-reverse">
-                      <div
-                        class="p-2 mr-3 bg-white mt-2"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mt-3">{x.name}</a>
-                      </div>
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    width: "400px",
+                    height: "300px",
+                    borderRadius: "15px",
+                  }}
+                  onClick={() => this.setState({ shopdId: x.id })}
+                >
+                  <div class="d-flex flex-row-reverse">
+                    <div
+                      class="p-2 mr-3 bg-white mt-2"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mt-3">{x.name}</a>
                     </div>
+                  </div>
 
-                    <img
-                      className="mr-3 mt-3"
-                      src={url2 + x.thumb_url}
-                      style={{ width: "100px", borderRadius: "15px" }}
-                    />
-                    <br />
+                  <img
+                    className="mr-3 mt-3"
+                    src={url2 + x.thumb_url}
+                    style={{ width: "100px", borderRadius: "15px" }}
+                  />
+                  <br />
 
-                    <div class="d-flex flex-row-reverse mt-3">
-                      <div
-                        class="p-2 mr-3 bg-white"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mr-1">عنوان:{x.address}</a>
-                      </div>
+                  <div class="d-flex flex-row-reverse mt-3">
+                    <div
+                      class="p-2 mr-3 bg-white"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mr-1">عنوان:{x.address}</a>
                     </div>
-                    <div class="d-flex flex-row-reverse mt-3">
-                      <div
-                        class="p-2 mr-3 bg-white"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mr-1">
-                          الفراغ:{x.distance}
-                        </a>
-                      </div>
+                  </div>
+                  <div class="d-flex flex-row-reverse mt-3">
+                    <div
+                      class="p-2 mr-3 bg-white"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mr-1">الفراغ:{x.distance}</a>
                     </div>
                   </div>
                 </div>
               </div>
-            )),
-          })
-        // console.log(res.data.data.nearest_store)
+            </div>
+          )),
+        })
       )
 
       .catch((error) => {
@@ -142,9 +130,6 @@ class Maps extends Component {
       });
   };
 
-  componentWillReceiveProps(newProps) {
-    console.log("Component WILL RECIEVE PROPS!");
-  }
   componentDidMount() {
     const url2 = "https://admin.jiet.app";
     this.getLocation();
@@ -154,68 +139,62 @@ class Maps extends Component {
     };
     axios
       .post("https://admin.jiet.app/api/customer/find-store-by-location", user)
-      .then(
-        (res) =>
-          // console.log(JSON.stringify(res.data.data.nearest_store.thumb_url))
-          this.setState({
-            nearshop: res.data.data.nearest_store,
-            aroundshop: res.data.data.around.data.map((x) => (
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-center text-right mt-3 mb-3">
-                  <div
-                    style={{
-                      backgroundImage: `url(${url2 + x.banner_url})`,
-                      // backgroundImage: `url(${Shop1})`,
+      .then((res) =>
+        this.setState({
+          nearshop: res.data.data.nearest_store,
+          aroundshop: res.data.data.around.data.map((x) => (
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex justify-content-center text-right mt-3 mb-3">
+                <div
+                  style={{
+                    backgroundImage: `url(${url2 + x.banner_url})`,
 
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center",
-                      backgroundSize: "cover",
-                      width: "400px",
-                      height: "300px",
-                      borderRadius: "15px",
-                    }}
-                    onClick={() => this.setState({ shopdId: x.id })}
-                  >
-                    <div class="d-flex flex-row-reverse">
-                      <div
-                        class="p-2 mr-3 bg-white mt-2"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mt-3">{x.name}</a>
-                      </div>
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    width: "400px",
+                    height: "300px",
+                    borderRadius: "15px",
+                  }}
+                  onClick={() => this.setState({ shopdId: x.id })}
+                >
+                  <div class="d-flex flex-row-reverse">
+                    <div
+                      class="p-2 mr-3 bg-white mt-2"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mt-3">{x.name}</a>
                     </div>
+                  </div>
 
-                    <img
-                      className="mr-3 mt-3"
-                      src={url2 + x.thumb_url}
-                      style={{ width: "100px", borderRadius: "15px" }}
-                    />
-                    <br />
+                  <img
+                    className="mr-3 mt-3"
+                    src={url2 + x.thumb_url}
+                    style={{ width: "100px", borderRadius: "15px" }}
+                  />
+                  <br />
 
-                    <div class="d-flex flex-row-reverse mt-3">
-                      <div
-                        class="p-2 mr-3 bg-white"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mr-1">عنوان:{x.address}</a>
-                      </div>
+                  <div class="d-flex flex-row-reverse mt-3">
+                    <div
+                      class="p-2 mr-3 bg-white"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mr-1">عنوان:{x.address}</a>
                     </div>
-                    <div class="d-flex flex-row-reverse mt-3">
-                      <div
-                        class="p-2 mr-3 bg-white"
-                        style={{ borderRadius: "15px" }}
-                      >
-                        <a className="text_bannerimg mr-1">
-                          الفراغ:{x.distance}
-                        </a>
-                      </div>
+                  </div>
+                  <div class="d-flex flex-row-reverse mt-3">
+                    <div
+                      class="p-2 mr-3 bg-white"
+                      style={{ borderRadius: "15px" }}
+                    >
+                      <a className="text_bannerimg mr-1">الفراغ:{x.distance}</a>
                     </div>
                   </div>
                 </div>
               </div>
-            )),
-          })
-        // console.log(res.data.data.nearest_store)
+            </div>
+          )),
+        })
       )
 
       .catch((error) => {
@@ -238,10 +217,8 @@ class Maps extends Component {
     this.props.Press1(id);
   }
   render() {
-    console.log(data);
-    console.log(this.state.shopdId);
     const data2 = this.state.filter;
-    console.log(data2);
+
     const url2 = "https://admin.jiet.app";
     return (
       <div>
@@ -507,12 +484,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispachToProps = (dispach) => {
-//   return {
-//     Press1: () => dispach({ type: 1 }),
-//     Press2: () => dispach({ type: 2 }),
-//   };
-// };
 function mapDispatchToProps(dispatch) {
   return {
     Press1: (id) => {
@@ -523,4 +494,4 @@ function mapDispatchToProps(dispatch) {
 
 export default GoogleApiWrapper({
   apiKey: "AIzaSyBLNltXFbOpq0dj1QJhw7mJeiLF6gYit2M",
-})(connect(mapStateToProps, mapDispatchToProps)(Maps));
+})(connect(mapStateToProps, mapDispatchToProps)(withRouter(Maps)));

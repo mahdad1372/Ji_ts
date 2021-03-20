@@ -37,7 +37,7 @@ const initialState = {
   cost9: "",
 };
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action: { type: number }) => {
   const newState = { ...state };
 
   if (action.type === 1) {

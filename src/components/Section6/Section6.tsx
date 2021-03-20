@@ -1,4 +1,5 @@
 import React from "react";
+import Iraq from "../../img/Iraq33.png";
 const WOW = require("wowjs");
 class Section6 extends React.Component {
   componentDidMount() {
@@ -19,7 +20,7 @@ class Section6 extends React.Component {
           <div className="row">
             <div className="col-lg-4 col-md-12 col-sm-12">
               <div className="d-flex justify-content-center text-center">
-                <img className="icon4" src={require("../../img/Iraq33.png")} />
+                <img className="icon4" src={Iraq} />
               </div>
             </div>
 

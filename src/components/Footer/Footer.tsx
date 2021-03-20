@@ -1,4 +1,8 @@
 import React from "react";
+import Rectangular from "../../img/Rectangle27.png";
+import Facebook from "../../img/facebook-01.png";
+import Google from "../../img/google-01.png";
+import Instagram from "../../img/insta-01.png";
 const WOW = require("wowjs");
 class Footer extends React.Component {
   componentDidMount() {
@@ -23,7 +27,7 @@ class Footer extends React.Component {
                   <img
                     className="icon5 mr-3"
                     style={{ width: "30px" }}
-                    src={require("../img/Rectangle27.png")}
+                    src={Rectangular}
                   />
                 </div>
               </div>
@@ -37,7 +41,7 @@ class Footer extends React.Component {
                   <img
                     className="icon5 mr-3"
                     style={{ width: "30px" }}
-                    src={require("../img/Rectangle27.png")}
+                    src={Rectangular}
                   />
                 </div>
               </div>
@@ -47,18 +51,9 @@ class Footer extends React.Component {
                 وسائل التواصل الاجتماعي
               </p>
               <br />
-              <img
-                className="icon5 mr-3"
-                src={require("../img/facebook-01.png")}
-              />
-              <img
-                className="icon5 mr-3"
-                src={require("../img/google-01.png")}
-              />
-              <img
-                className="icon5 mr-3"
-                src={require("../img/insta-01.png")}
-              />
+              <img className="icon5 mr-3" src={Facebook} />
+              <img className="icon5 mr-3" src={Google} />
+              <img className="icon5 mr-3" src={Instagram} />
             </div>
           </div>
         </div>

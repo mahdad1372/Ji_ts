@@ -1,6 +1,10 @@
 import React from "react";
 import Icon2 from "../../img/icon2.png";
 import Icon1 from "../../img/icon1.png";
+import Icon3 from "../../img/icon3.png";
+import Icon4 from "../../img/icon4.png";
+import Icon5 from "../../img/icon5.png";
+import Icon6 from "../../img/icon6.png";
 const WOW = require("wowjs");
 
 class Section3 extends React.Component {
@@ -39,7 +43,7 @@ class Section3 extends React.Component {
                   <p className="text6">سرعة في التسوق اليومي</p>
                 </div>
                 <div className="p-2">
-                  <img className="icon2" src={require("../../img/icon1.png")} />
+                  <img className="icon2" src={Icon1} />
                 </div>
               </div>
             </div>
@@ -54,7 +58,7 @@ class Section3 extends React.Component {
                   </a>
                 </div>
                 <div className="p-2">
-                  <img className="icon2" src={require("../../img/icon3.png")} />
+                  <img className="icon2" src={Icon3} />
                 </div>
               </div>
             </div>
@@ -64,7 +68,7 @@ class Section3 extends React.Component {
                   <p className="text6">تحديد المنتجات حسب الفئة </p>
                 </div>
                 <div className="p-2">
-                  <img className="icon2" src={require("../../img/icon4.png")} />
+                  <img className="icon2" src={Icon4} />
                 </div>
               </div>
             </div>
@@ -77,7 +81,7 @@ class Section3 extends React.Component {
                   <a className="text6">الحصول على التخفيضات</a>
                 </div>
                 <div className="p-2">
-                  <img className="icon2" src={require("../../img/icon5.png")} />
+                  <img className="icon2" src={Icon5} />
                 </div>
               </div>
             </div>
@@ -87,7 +91,7 @@ class Section3 extends React.Component {
                   <p className="text6">تحديد وقت الاستلام</p>
                 </div>
                 <div className="p-2">
-                  <img className="icon2" src={require("../../img/icon6.png")} />
+                  <img className="icon2" src={Icon6} />
                 </div>
               </div>
             </div>

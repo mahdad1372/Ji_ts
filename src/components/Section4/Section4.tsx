@@ -1,4 +1,13 @@
 import React from "react";
+import Icon8 from "../../img/icon8-01.png";
+import Icon11 from "../../img/icon11-01.png";
+import Icon7 from "../../img/icon7-01.png";
+import Icon9 from "../../img/icon9-01.png";
+import Icon12 from "../../img/icon12-01.png";
+import Icon10 from "../../img/icon10-01.png";
+import Icon13 from "../../img/icon13-01.png";
+import Icon14 from "../../img/icon14-01.png";
+import Icon1 from "../../img/icon1.png";
 const WOW = require("wowjs");
 class Section4 extends React.Component {
   componentDidMount() {
@@ -45,10 +54,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon8-01.png")}
-                  />
+                  <img className="icon2" src={Icon8} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -62,10 +68,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon11-01.png")}
-                  />
+                  <img className="icon2" src={Icon11} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -78,10 +81,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon7-01.png")}
-                  />
+                  <img className="icon2" src={Icon7} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -96,10 +96,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon9-01.png")}
-                  />
+                  <img className="icon2" src={Icon9} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -111,10 +108,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon12-01.png")}
-                  />
+                  <img className="icon2" src={Icon12} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -129,10 +123,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon10-01.png")}
-                  />
+                  <img className="icon2" src={Icon10} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -149,10 +140,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon13-01.png")}
-                  />
+                  <img className="icon2" src={Icon13} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -164,10 +152,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img
-                    className="icon2"
-                    src={require("../../img/icon14-01.png")}
-                  />
+                  <img className="icon2" src={Icon14} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">
@@ -180,7 +165,7 @@ class Section4 extends React.Component {
             <div className="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
               <div className="d-flex justify-content-center text-center">
                 <div>
-                  <img className="icon2" src={require("../../img/icon1.png")} />
+                  <img className="icon2" src={Icon1} />
                 </div>
               </div>
               <div className="d-flex justify-content-center text-center">

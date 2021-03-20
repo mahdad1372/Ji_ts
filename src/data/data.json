@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "img1": "../img/shop1.jpg",
+    "img2": "../img/logo2.png",
+    "name": "سوبر ماركت بغداد",
+    "address": "بغداد شارع بیروت",
+    "distance": "193",
+    "type": "s"
+  },
+  {
+    "id": 2,
+    "img1": "../img/shop2.jpg",
+    "img2": "../../img/logo3.png",
+    "name": "سوبر ماركت اردن",
+    "address": "بغداد شارع اردن",
+    "distance": "456",
+    "type": "s"
+  },
+  {
+    "id": 3,
+    "img1": "../img/shop3.jpg",
+    "img2": "../../img/logo4.png",
+    "name": "سوبر ماركت العراق",
+    "address": "بغداد شارع اردن",
+    "distance": "456",
+    "type": "s"
+  },
+  {
+    "id": 4,
+    "img1": "../img/shop4.jpg",
+    "img2": "../../img/logo4.png",
+    "name": "سوبر ماركت اردن",
+    "address": "بغداد شارع اردن",
+    "distance": "456",
+    "type": "s"
+  },
+  {
+    "id": 5,
+    "img1": "../../img/fruit1.jpg",
+    "img2": "../../img/logo5.png",
+    "name": "عالم فاكهه اردن",
+    "address": "بغداد شارع اردن",
+    "distance": "300",
+    "type": "f"
+  },
+  {
+    "id": 6,
+    "img1": "../../img/fruit2.jpg",
+    "img2": "../../img/logo6.png",
+    "name": "عالم فاكهه بغداد",
+    "address": "بغداد شارع اردن",
+    "distance": "300",
+    "type": "f"
+  },
+  {
+    "id": 7,
+    "img1": "../../img/mobile.jpg",
+    "img2": "../../img/logo6.png",
+    "name": "عالم الجوال البغداد",
+    "address": "بغداد شارع بیروت",
+    "distance": "300",
+    "type": "m"
+  },
+  {
+    "id": 8,
+    "img1": "../../img/mobileshop2.jpg",
+    "img2": "../../img/logo7.png",
+    "name": "عالم الجوال",
+    "address": "بغداد شارع تهران",
+    "distance": "300",
+    "type": "m"
+  },
+  {
+    "id": 9,
+    "img1": "../../img/cookie.jpg",
+    "img2": "../../img/logo7.png",
+    "name": " الحلويات بغداد",
+    "address": "بغداد شارع تهران",
+    "distance": "300",
+    "type": "c"
+  },
+  {
+    "id": 10,
+    "img1": "../../img/coffee.jpg",
+    "img2": "../../img/logo7.png",
+    "name": "الحلويات بغداد2",
+    "address": "بغداد شارع تهران",
+    "distance": "300",
+    "type": "c"
+  }
+]
